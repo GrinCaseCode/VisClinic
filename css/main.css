@@ -69,7 +69,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 .wrapper {
 	padding-top: 172px;
-	overflow: hidden;
 }
 a {
 	text-decoration: none;
@@ -671,6 +670,7 @@ form {
 .item-form {
 	margin-bottom: 14px;
 }
+.item-form textarea,
 .item-form input {
 	height: 54px;
 	padding: 0 20px;
@@ -2294,6 +2294,7 @@ form {
 	display: flex;
 	align-items: center;
 }
+.button-case .btn-main,
 .table-main__button .btn-main,
 .service-main .btn-main {
 	height: 62px;
@@ -2466,7 +2467,7 @@ form {
 	height: 372px;
 	border-radius: 16px 0 0 16px;
 	flex: none;
-	width: 50%;
+	flex: 1;
 	display: block;
 }
 .images-comparsion__item img {
@@ -2474,10 +2475,13 @@ form {
     height: 100%;
     object-fit: cover;
     font-family: 'object-fit: cover;';
+}
+.images-comparsion__item:first-child,
+.images-comparsion__item:first-child img {
 	border-radius: 16px 0 0 16px;
 }
-.images-comparsion__item:nth-child(2),
-.images-comparsion__item:nth-child(2) img {
+.images-comparsion__item:last-child,
+.images-comparsion__item:last-child img {
 	border-radius: 0 16px 16px 0;
 }
 .unit-comparsion__content {
@@ -2509,4 +2513,211 @@ form {
 }
 .single-service ~ .doctor-reviews {
 	padding-bottom: 110px;
+}
+.nav-page {
+	margin-bottom: 24px;
+	padding: 24px;
+	border-radius: 16px;
+	background: #fff;
+}
+.nav-page li {
+	margin-bottom: 8px;
+}
+.nav-page li:last-child {
+	margin-bottom: 0;
+}
+.nav-page a {
+	padding: 14px 24px;
+	font-size: 18px;
+	border-radius: 12px;
+	line-height: 140%;
+	font-weight: 500;
+	color: #434242;
+	display: block;
+	background: #f9f2e1;
+}
+.nav-page a:hover {
+	color: #fff;
+	background: #4c8a89;
+}
+.sidebar-doctor {
+	padding: 24px;
+	font-size: 14px;
+	line-height: 140%;
+	font-weight: 500;
+	border-radius: 20px;
+	background: #fff;
+}
+.sidebar-doctor__image {
+	width: 124px;
+	height: 124px;
+	margin-bottom: 24px;
+	border-radius: 50%;
+}
+.sidebar-doctor__image img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+	border-radius: 50%;
+}
+.sidebar-doctor .title-min {
+	margin: 10px 0;
+}
+.case-main {
+	padding: 36px;
+	margin-bottom: 47px;
+	font-size: 14px;
+	line-height: 140%;
+	border-radius: 30px;
+	background: #f9f2e1;
+}
+.case-main__image {
+	margin-left: -30px;
+	position: relative;
+}
+.case-main__image img {
+	border-radius: 18px;
+	max-width: 100%;
+	height: auto;
+}
+.case-main__descr {
+	font-size: 14px;
+	padding: 12px 14px;
+	left: 10px;
+	bottom: 9px;
+	line-height: 140%;
+	border-radius: 16px;
+	position: absolute;
+	background: #fff;
+}
+.case-main .title-section {
+	margin-bottom: 30px;
+}
+.case-main p {
+	margin-bottom: 16px;
+}
+.case-main p:last-child {
+	margin-bottom: 0;
+}
+.case-main strong {
+	font-weight: 600;
+}
+.case-main__content {
+	margin-right: 15px;
+}
+.item-box.item-box_simple {
+	margin-bottom: 20px;
+	color: #7c7c7c;
+	font-weight: 400;
+	min-height: initial;
+	height: auto;
+}
+.item-box.item-box_simple .title-middle {
+	color: #231f20;
+	font-weight: 500;
+}
+.item-box.item-box_simple::before {
+	display: none;
+}
+.button-case {
+	margin-top: 50px;
+	text-align: center;
+}
+.title-section.title-section_case {
+	margin-top: 80px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.slider-comparsion-case .images-comparsion__item {
+	height: 324px;
+}
+.slider-comparsion-case .slick-prev {
+	left: -70px;
+}
+.slider-comparsion-case .slick-next {
+	right: -70px;
+}
+.slider-comparsion-case .slick-arrow {
+	top: 135px;
+	transform: none;
+}
+.consultation_case .consultation__block {
+	padding: 43px;
+	padding-bottom: 0;
+}
+.consultation_case .consultation__block .title-middle {
+	font-size: 20px;
+	max-width: 340px;
+}
+.consultation_case .consultation__descr {
+	margin-top: 100px;
+	max-width: 340px;
+	font-size: 14px;
+	line-height: 160%;
+}
+.consultation_case .consultation__image {
+    margin-left: -92px;
+}
+.consultation_case .consultation__form {
+    max-width: 282px;
+	margin-left: auto;
+}
+.consultation_case {
+	margin-top: 80px;
+}
+.single-case .table-main td:last-child {
+	width: auto;
+}
+.single-case .table-main td {
+    font-size: 16px;
+}
+.price-value {
+	font-size: 20px;
+}
+.procedures-case .title-section {
+	margin-bottom: 50px;
+	max-width: 902px;
+}
+.procedures-case .table-main {
+	margin-bottom: 24px;
+}
+.procedures-case .table-main:last-child {
+	margin-bottom: 0;
+}
+.sidebar-page {
+	top: 179px;
+	position: sticky;
+}
+.item-form textarea {
+	padding-top: 16px;
+	height: 104px;
+	resize: none;
+}
+.consultation__block .founder__info {
+	margin-top: 99px;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.consultation__block.consultation__block_main {
+	padding-top: 24px;
+}
+.consultation__block.consultation__block_main .title-section {
+	margin-top: 29px;
+}
+.consultation__block_main .consultation__form {
+	margin-top: 60px;
+	margin-left: -15px;
+}
+.consultation_case .consultation__block_main .consultation__image {
+    margin-left: -112px;
+}
+.consultation_case:last-child {
+	padding-bottom: 0;
+}
+.single-case {
+	padding-bottom: 120px;
 }

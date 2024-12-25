@@ -39,6 +39,13 @@ $(document).ready(function() {
 		}
 	  });
 
+	  
+	//плавный скролл
+	$(".nav-page li a").mPageScroll2id({
+		offset: 160
+	});
+
+
 	//слайдер
 
 	$('.slider-sales').slick({
@@ -237,6 +244,26 @@ $(document).ready(function() {
 					}
 					]
 				});
+
+				$('.slider-comparsion-case').slick({
+					arrows: true,
+					dots: false,
+					infinite: true,
+					touchThreshold: 1000,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+					nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+					responsive: [
+						{
+							breakpoint: 1200,
+							settings: {
+								arrows: false,
+								dots: true,
+							}
+						}
+						]
+					});
 
 		$('.filter-list_tabs li a').click(function(event) {
 			event.preventDefault();

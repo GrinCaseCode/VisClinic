@@ -743,6 +743,9 @@
     .team .title-section {
         margin-bottom: 35px;
     }
+    .slider-comparsion .slick-arrow {
+        top: 135px;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -2008,6 +2011,9 @@
         font-size: 14px;
         bottom: 5px;
         left: 5px;
+    }
+    .wrapper {
+        overflow: hidden;
     }
 }
 
