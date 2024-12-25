@@ -2015,6 +2015,12 @@
     .wrapper {
         overflow: hidden;
     }
+    .page-procedures .head-section {
+        margin-bottom: 25px;
+    }
+    .page-procedures .filter-list {
+        margin-bottom: 30px;
+    }
 }
 
 /* Small Devices, Tablets */
