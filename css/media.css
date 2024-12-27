@@ -2306,6 +2306,12 @@
     .single-case {
         padding-bottom: 60px;
     }
+    .case-main__image img {
+        width: 100%;
+    }
+    .consultation_case .consultation__form {
+        max-width: 100%;
+    }
 }
 
 /* Small Devices, Tablets */
