@@ -20,13 +20,13 @@ body textarea:focus:required:invalid {
 	
 }
 body input:required:valid,
-body textarea:required:valid {
+body textarea:required:valid { 
 	
 }
 body {
 	font-family: 'Onest';
 	font-size: 16px;
-	line-height: 160%;
+	line-height: 160%; 
 	color: #231F20;
 	overflow-x: hidden;
 	margin: 0;
@@ -2632,11 +2632,14 @@ form {
 .slider-comparsion-case .images-comparsion__item {
 	height: 324px;
 }
+.slider-comparsion-case {
+	padding: 0 74px;
+}
 .slider-comparsion-case .slick-prev {
-	left: -70px;
+	left: 0px;
 }
 .slider-comparsion-case .slick-next {
-	right: -70px;
+	right: 0px;
 }
 .slider-comparsion-case .slick-arrow {
 	top: 135px;

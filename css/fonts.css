@@ -16,7 +16,7 @@
         url('../fonts/Onest-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
+  } 
   @font-face {
     font-family: 'Onest';
     src: local('Onest Medium'), local('Onest-Medium'),

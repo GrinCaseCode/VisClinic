@@ -15,6 +15,18 @@ $(document).ready(function() {
 		}
 	});
 
+	{
+		if ($(window).width() < 992) { 
+			$(".item-box__head").click(function() {
+				$(this).parent().toggleClass("active");
+				$(this).siblings().slideToggle(200);
+				$(this).parent().siblings(".item-box").removeClass("active");
+				$(this).parent().siblings(".item-box").find(".item-box__content").slideUp(200);
+			  });
+		}
+	  }
+
+
 	$(document).mouseup(function (e) {
 		var menu = $(".main-menu");
 		if (menu.has(e.target).length === 0){
@@ -258,7 +270,6 @@ $(document).ready(function() {
 						{
 							breakpoint: 1200,
 							settings: {
-								arrows: false,
 								dots: true,
 							}
 						}
