@@ -563,7 +563,7 @@
     .wrap-reviews .row {
         margin: 0 -35px;
     }
-    .unit-review {
+    .unit-review__image {
         height: 425px;
     }
     .wrap-reviews {
@@ -1026,7 +1026,7 @@
         padding: 12px;
         font-size: 13px;
     }
-    .unit-review {
+    .unit-review__image {
         height: 350px;
     }
     .item-sidebar__head {
@@ -2088,7 +2088,7 @@
         padding: 0;
         background: transparent;
     }
-    .unit-review {
+    .unit-review__image {
         height: 497px;
     }
     .unit-review__content {
@@ -2338,6 +2338,12 @@
     }
     .unit-person .title-min {
         font-size: 15px;
+    }
+    .price-value {
+        font-size: 12px;
+    }
+    .table-main {
+        padding: 10px;
     }
 }
 
