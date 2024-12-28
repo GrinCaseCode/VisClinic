@@ -2082,7 +2082,10 @@
         padding-bottom: 36px;
     }
     .slider-reviews {
-        padding-bottom: 34px;
+        margin-bottom: 34px;
+    }
+    .slider-reviews .slick-dots {
+        bottom: -34px;
     }
     .wrap-reviews {
         padding: 0;
